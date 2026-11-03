@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Page not found | Bapi Store</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1a110c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a110c'/%3E%3Cpath d='M16 52V30a16 16 0 0 1 32 0v22z' fill='none' stroke='%23d9b36c' stroke-width='3'/%3E%3C/svg%3E">
+<style>
+  /* Self-contained on purpose: this page can be served from any URL depth. */
+  :root { --teak:#1a110c; --brass:#d9b36c; --brass-ink:#241706; --ink:#f6efe3; --ink-2:rgba(246,239,227,.78); --edge:rgba(255,240,214,.16);
+    --display:"Rozha One","Iowan Old Style",Georgia,serif; --body:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{color-scheme:dark}
+  body{min-height:100vh;min-height:100dvh;display:grid;place-items:center;padding:24px;background:var(--teak);color:var(--ink);font:400 1rem/1.55 var(--body);overflow-x:hidden}
+  .bg{position:fixed;inset:0;z-index:-1;background:
+    radial-gradient(circle 60vmax at 8% 4%,rgba(217,179,108,.34),transparent 70%),
+    radial-gradient(circle 55vmax at 96% 28%,rgba(184,50,111,.28),transparent 70%),
+    radial-gradient(circle 60vmax at 40% 104%,rgba(47,107,79,.40),transparent 70%),var(--teak)}
+  main{width:min(560px,100%);display:grid;justify-items:center;text-align:center;gap:14px;padding:34px 22px 28px;border-radius:30px;
+    background:linear-gradient(145deg,rgba(70,46,32,.60),rgba(32,21,15,.56));border:1px solid var(--edge);
+    box-shadow:inset 0 1px 0 rgba(255,244,226,.14),0 24px 60px -24px rgba(0,0,0,.7);
+    -webkit-backdrop-filter:blur(28px) saturate(160%);backdrop-filter:blur(28px) saturate(160%)}
+  .arch{width:min(210px,58vw);aspect-ratio:4/5;display:grid;place-items:center;border-radius:50% 50% 24px 24px/40% 40% 24px 24px;
+    background:linear-gradient(145deg,rgba(255,244,226,.18),rgba(255,244,226,.05));border:1px solid rgba(255,240,214,.3);margin-bottom:6px}
+  .code{font:400 clamp(3.6rem,17vw,5.2rem)/1 var(--display);padding-top:18%;background:linear-gradient(180deg,#f6e2b0,#b98c4a);-webkit-background-clip:text;background-clip:text;color:transparent}
+  h1{font:400 clamp(1.7rem,6vw,2.3rem)/1.15 var(--display);text-wrap:balance}
+  p{color:var(--ink-2);max-width:44ch}
+  .actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:6px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:14px;border:1px solid transparent;font-weight:700;color:inherit;text-decoration:none}
+  .btn.brass{background:linear-gradient(145deg,#ecd29a,#c39a58);color:var(--brass-ink);box-shadow:0 10px 26px -12px rgba(217,179,108,.75),inset 0 1px 0 rgba(255,255,255,.45)}
+  .btn.glass{background:rgba(255,244,226,.08);border-color:var(--edge)}
+  .btn:focus-visible,.chip:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+  .cats{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:8px}
+  .cats[hidden]{display:none}
+  .chip{padding:8px 14px;border-radius:999px;border:1px solid var(--edge);background:rgba(255,244,226,.06);color:var(--ink-2);text-decoration:none;font-weight:600;font-size:.9375rem}
+  .chip:hover{background:rgba(255,244,226,.13)}
+  .path{font-size:.875rem;opacity:.7;word-break:break-all}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+<main>
+  <div class="arch" aria-hidden="true"><span class="code">404</span></div>
+  <h1>That aisle doesn’t exist</h1>
+  <p>The page you were looking for isn’t part of the store. It may have moved, or the link may have a typo.</p>
+  <p class="path" id="path" hidden></p>
+  <div class="actions">
+    <a class="btn brass" id="home" href="/">Back to the shop</a>
+    <a class="btn glass" id="wa" href="https://wa.me/919832596691" target="_blank" rel="noopener">Ask on WhatsApp</a>
+  </div>
+  <div class="cats" id="cats" hidden aria-label="Shop by category"></div>
+</main>
+<script>
+  // If the site lives in a sub-folder (for example https://name.github.io/bapi-store/), set BASE to "/bapi-store/".
+  var BASE = "/";
+  var WHATSAPP = "919832596691";
+
+  // Fonts are loaded from BASE so they resolve at any URL depth.
+  var fs = document.createElement("style");
+  fs.textContent =
+    '@font-face{font-family:"Rozha One";font-weight:400;font-display:swap;src:url(' + BASE + 'Assets/fonts/rozha-one-latin-400-normal.woff2) format("woff2")}' +
+    '@font-face{font-family:"Hanken Grotesk";font-weight:100 900;font-display:swap;src:url(' + BASE + 'Assets/fonts/hanken-grotesk-latin-wght-normal.woff2) format("woff2")}';
+  document.head.appendChild(fs);
+
+  document.getElementById("home").href = BASE;
+  document.getElementById("wa").href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent("Hi! I couldn't find a page on your website.");
+  var p = document.getElementById("path");
+  p.textContent = location.pathname; p.hidden = false;
+
+  // Offer category links when the product list can be reached.
+  fetch(BASE + "data/products.json").then(function (r) { return r.ok ? r.json() : Promise.reject(); }).then(function (d) {
+    var seen = {}, box = document.getElementById("cats");
+    (d.products || []).forEach(function (x) {
+      if (seen[x.category]) return; seen[x.category] = 1;
+      var a = document.createElement("a");
+      a.className = "chip"; a.textContent = x.category; a.href = BASE + "#/?cat=" + encodeURIComponent(x.category);
+      box.appendChild(a);
+    });
+    if (box.children.length) box.hidden = false;
+  }).catch(function () {});
+</script>
+</body>
+</html>

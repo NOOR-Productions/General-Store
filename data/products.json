@@ -1,0 +1,538 @@
+{
+  "_help": "Edit prices and stock here. Set inStock true/false, featured, popular (shows under 'Ordered often') and comingSoon. Every product needs a unique id that never changes. To remove a product, delete its { } block and the comma.",
+  "products": [
+    {
+      "id": "dairy-milk-40g",
+      "name": "Dairy Milk 40g",
+      "brand": "Cadbury",
+      "size": "40g",
+      "category": "Chocolates",
+      "price": 20,
+      "image": "Assets/products/cadbury.webp",
+      "description": "Cadbury classic milk chocolate",
+      "details": [
+        "Cadbury",
+        "40g",
+        "Milk Chocolate"
+      ],
+      "inStock": true,
+      "featured": true,
+      "popular": false,
+      "comingSoon": false
+    },
+    {
+      "id": "kitkat-4-finger",
+      "name": "KitKat 4-Finger",
+      "brand": "Nestlé",
+      "size": "41.5g",
+      "category": "Chocolates",
+      "price": 30,
+      "image": "Assets/products/kitkat.webp",
+      "description": "Crispy wafer with milk chocolate",
+      "details": [
+        "Nestlé",
+        "41.5g",
+        "Wafer Bar"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": true,
+      "comingSoon": false
+    },
+    {
+      "id": "lays-classic-salted",
+      "name": "Lays Classic Salted",
+      "brand": "PepsiCo",
+      "size": "26g",
+      "category": "Snacks",
+      "price": 20,
+      "image": "Assets/products/lays.webp",
+      "description": "Crunchy potato chips",
+      "details": [
+        "PepsiCo",
+        "26g",
+        "Salted"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": true,
+      "comingSoon": false
+    },
+    {
+      "id": "kurkure-masala-munch",
+      "name": "Kurkure Masala Munch",
+      "brand": "PepsiCo",
+      "size": "45g",
+      "category": "Snacks",
+      "price": 20,
+      "image": "Assets/products/kurkure.webp",
+      "description": "Spicy puffed corn snack",
+      "details": [
+        "PepsiCo",
+        "45g",
+        "Masala"
+      ],
+      "inStock": false,
+      "featured": false,
+      "popular": false,
+      "comingSoon": true
+    },
+    {
+      "id": "maybelline-lipstick",
+      "name": "Maybelline Lipstick",
+      "brand": "Maybelline",
+      "size": "4.2g",
+      "category": "Makeup",
+      "price": 299,
+      "image": "Assets/products/maybelline-lipstick.webp",
+      "description": "Color Sensational matte finish",
+      "details": [
+        "Maybelline",
+        "Matte",
+        "4.2g"
+      ],
+      "inStock": true,
+      "featured": true,
+      "popular": false,
+      "comingSoon": false
+    },
+    {
+      "id": "lakme-kajal",
+      "name": "Lakme Kajal",
+      "brand": "Lakme",
+      "size": "0.35g",
+      "category": "Makeup",
+      "price": 179,
+      "image": "Assets/products/lakme-kajal.webp",
+      "description": "Intense black eye kajal",
+      "details": [
+        "Lakme",
+        "0.35g",
+        "Waterproof"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": true,
+      "comingSoon": false
+    },
+    {
+      "id": "greeting-card",
+      "name": "Greeting Card",
+      "brand": "",
+      "size": "A5",
+      "category": "Gifts",
+      "price": 50,
+      "image": "Assets/products/greeting-cards.webp",
+      "description": "Birthday & occasion cards",
+      "details": [
+        "Assorted designs",
+        "A5 size"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": false,
+      "comingSoon": true
+    },
+    {
+      "id": "scented-candle",
+      "name": "Scented Candle",
+      "brand": "",
+      "size": "100 g",
+      "category": "Gifts",
+      "price": 149,
+      "image": "Assets/products/scented-candles.webp",
+      "description": "Lavender & vanilla fragrance",
+      "details": [
+        "100g",
+        "Burn time: 20hr",
+        "Glass jar"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": false,
+      "comingSoon": false
+    },
+    {
+      "id": "perk-chocolate",
+      "name": "Perk Chocolate",
+      "brand": "Cadbury",
+      "size": "13g",
+      "category": "Chocolates",
+      "price": 10,
+      "image": "Assets/products/perk.webp",
+      "description": "Cadbury Perk wafer & chocolate",
+      "details": [
+        "Cadbury",
+        "13g",
+        "Wafer & Choco"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": false,
+      "comingSoon": false
+    },
+    {
+      "id": "5-star",
+      "name": "5 Star",
+      "brand": "Cadbury",
+      "size": "40g",
+      "category": "Chocolates",
+      "price": 20,
+      "image": "Assets/products/5star.webp",
+      "description": "Caramel & nougat bar",
+      "details": [
+        "Cadbury",
+        "40g",
+        "Caramel"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": true,
+      "comingSoon": false
+    },
+    {
+      "id": "maggi-2-minute-noodles",
+      "name": "Maggi 2-Minute Noodles",
+      "brand": "Nestlé",
+      "size": "70g",
+      "category": "Food",
+      "price": 14,
+      "image": "Assets/products/maggi.webp",
+      "description": "Masala flavour instant noodles",
+      "details": [
+        "Nestlé",
+        "70g",
+        "Masala"
+      ],
+      "inStock": true,
+      "featured": true,
+      "popular": true,
+      "comingSoon": false
+    },
+    {
+      "id": "parle-g-biscuit",
+      "name": "Parle-G Biscuit",
+      "brand": "Parle",
+      "size": "100g",
+      "category": "Food",
+      "price": 10,
+      "image": "Assets/products/parle-g.webp",
+      "description": "Classic glucose biscuit",
+      "details": [
+        "Parle",
+        "100g",
+        "Glucose"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": true,
+      "comingSoon": false
+    },
+    {
+      "id": "britannia-marie-gold",
+      "name": "Britannia Marie Gold",
+      "brand": "Britannia",
+      "size": "250g",
+      "category": "Food",
+      "price": 20,
+      "image": "Assets/products/marie-gold.webp",
+      "description": "Light & crispy tea biscuit",
+      "details": [
+        "Britannia",
+        "250g",
+        "Marie"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": false,
+      "comingSoon": false
+    },
+    {
+      "id": "coca-cola-500ml",
+      "name": "Coca-Cola 500ml",
+      "brand": "Coca-Cola",
+      "size": "500ml",
+      "category": "Beverages",
+      "price": 40,
+      "image": "Assets/products/coca-cola.webp",
+      "description": "Ice cold refreshing cola",
+      "details": [
+        "Coca-Cola",
+        "500ml",
+        "Carbonated"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": true,
+      "comingSoon": false
+    },
+    {
+      "id": "frooti-200ml",
+      "name": "Frooti 200ml",
+      "brand": "Parle Agro",
+      "size": "200ml",
+      "category": "Beverages",
+      "price": 20,
+      "image": "Assets/products/frooti.webp",
+      "description": "Mango fruit drink",
+      "details": [
+        "Parle Agro",
+        "200ml",
+        "Mango"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": false,
+      "comingSoon": false
+    },
+    {
+      "id": "red-bull-250ml",
+      "name": "Red Bull 250ml",
+      "brand": "Red Bull",
+      "size": "250ml",
+      "category": "Beverages",
+      "price": 125,
+      "image": "Assets/products/red-bull.webp",
+      "description": "Energy drink with caffeine",
+      "details": [
+        "Red Bull",
+        "250ml",
+        "Energy"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": false,
+      "comingSoon": false
+    },
+    {
+      "id": "dettol-soap",
+      "name": "Dettol Soap",
+      "brand": "Reckitt",
+      "size": "75g",
+      "category": "Personal Care",
+      "price": 49,
+      "image": "Assets/products/dettol.webp",
+      "description": "Antibacterial protection soap",
+      "details": [
+        "Reckitt",
+        "75g",
+        "Antibacterial"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": false,
+      "comingSoon": false
+    },
+    {
+      "id": "colgate-toothpaste",
+      "name": "Colgate Toothpaste",
+      "brand": "Colgate",
+      "size": "150g",
+      "category": "Personal Care",
+      "price": 79,
+      "image": "Assets/products/colgate.webp",
+      "description": "Strong teeth whitening paste",
+      "details": [
+        "Colgate",
+        "150g",
+        "Whitening"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": false,
+      "comingSoon": false
+    },
+    {
+      "id": "parachute-coconut-oil",
+      "name": "Parachute Coconut Oil",
+      "brand": "Marico",
+      "size": "200ml",
+      "category": "Personal Care",
+      "price": 99,
+      "image": "Assets/products/parachute.webp",
+      "description": "Pure coconut hair oil",
+      "details": [
+        "Marico",
+        "200ml",
+        "Hair Oil"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": false,
+      "comingSoon": false
+    },
+    {
+      "id": "surf-excel-detergent",
+      "name": "Surf Excel Detergent",
+      "brand": "HUL",
+      "size": "500g",
+      "category": "Household",
+      "price": 55,
+      "image": "Assets/products/surf-excel.webp",
+      "description": "Tough stain removal powder",
+      "details": [
+        "HUL",
+        "500g",
+        "Detergent"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": false,
+      "comingSoon": false
+    },
+    {
+      "id": "harpic-toilet-cleaner",
+      "name": "Harpic Toilet Cleaner",
+      "brand": "Reckitt",
+      "size": "500ml",
+      "category": "Household",
+      "price": 89,
+      "image": "Assets/products/harpic.webp",
+      "description": "Powerful toilet disinfectant",
+      "details": [
+        "Reckitt",
+        "500ml",
+        "Disinfectant"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": false,
+      "comingSoon": false
+    },
+    {
+      "id": "good-knight-mosquito-coil",
+      "name": "Good Knight Mosquito Coil",
+      "brand": "Godrej",
+      "size": "10 coils",
+      "category": "Household",
+      "price": 35,
+      "image": "Assets/products/good-knight.webp",
+      "description": "10-hour mosquito protection",
+      "details": [
+        "Godrej",
+        "10 coils",
+        "Mosquito Repellent"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": true,
+      "comingSoon": false
+    },
+    {
+      "id": "hajmola-candy",
+      "name": "Hajmola Candy",
+      "brand": "Dabur",
+      "size": "",
+      "category": "Snacks",
+      "price": 5,
+      "image": "Assets/products/hajmola.webp",
+      "description": "Tangy digestive candy",
+      "details": [
+        "Dabur",
+        "Imli flavour",
+        "Digestive"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": true,
+      "comingSoon": false
+    },
+    {
+      "id": "monaco-biscuit",
+      "name": "Monaco Biscuit",
+      "brand": "Parle",
+      "size": "150g",
+      "category": "Snacks",
+      "price": 20,
+      "image": "Assets/products/monaco.webp",
+      "description": "Salted snack crackers",
+      "details": [
+        "Parle",
+        "150g",
+        "Salted Crackers"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": false,
+      "comingSoon": false
+    },
+    {
+      "id": "fevicol-mr-50g",
+      "name": "Fevicol MR 50g",
+      "brand": "Pidilite",
+      "size": "50g",
+      "category": "Stationery",
+      "price": 30,
+      "image": "Assets/products/fevicol.webp",
+      "description": "Synthetic resin adhesive",
+      "details": [
+        "Pidilite",
+        "50g",
+        "Adhesive"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": false,
+      "comingSoon": false
+    },
+    {
+      "id": "reynolds-pen-pack-of-10",
+      "name": "Reynolds Pen (Pack of 10)",
+      "brand": "Reynolds",
+      "size": "10 pcs",
+      "category": "Stationery",
+      "price": 50,
+      "image": "Assets/products/pens.webp",
+      "description": "Smooth writing ballpoint pens",
+      "details": [
+        "Reynolds",
+        "Blue ink",
+        "0.7mm",
+        "10 pcs"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": true,
+      "comingSoon": false
+    },
+    {
+      "id": "notebook-a4-200-pages",
+      "name": "Notebook A4 (200 pages)",
+      "brand": "Classmate",
+      "size": "200 pages",
+      "category": "Stationery",
+      "price": 60,
+      "image": "Assets/products/notebook.webp",
+      "description": "Single-ruled writing notebook",
+      "details": [
+        "Classmate",
+        "A4",
+        "200 pages",
+        "Single Rule"
+      ],
+      "inStock": true,
+      "featured": false,
+      "popular": false,
+      "comingSoon": false
+    },
+    {
+      "id": "amul-butter-100g",
+      "name": "Amul Butter 100g",
+      "brand": "Amul",
+      "size": "100g",
+      "category": "Food",
+      "price": 55,
+      "image": "Assets/products/amul-butter.webp",
+      "description": "Pasteurised table butter",
+      "details": [
+        "Amul",
+        "100g",
+        "Salted Butter"
+      ],
+      "inStock": false,
+      "featured": false,
+      "popular": false,
+      "comingSoon": true
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>You’re offline | Bapi Store</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1a110c">
+<style>
+  /* Self-contained and font-free so it renders with no connection at all. */
+  :root { --teak:#1a110c; --brass:#d9b36c; --brass-ink:#241706; --ink:#f6efe3; --ink-2:rgba(246,239,227,.78); --edge:rgba(255,240,214,.16); }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{color-scheme:dark}
+  body{min-height:100vh;min-height:100dvh;display:grid;place-items:center;padding:24px;background:var(--teak);color:var(--ink);font:400 1rem/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  .bg{position:fixed;inset:0;z-index:-1;background:
+    radial-gradient(circle 60vmax at 8% 4%,rgba(217,179,108,.30),transparent 70%),
+    radial-gradient(circle 55vmax at 96% 28%,rgba(184,50,111,.24),transparent 70%),
+    radial-gradient(circle 60vmax at 40% 104%,rgba(47,107,79,.36),transparent 70%),var(--teak)}
+  main{width:min(540px,100%);display:grid;justify-items:center;text-align:center;gap:14px;padding:34px 22px 28px;border-radius:30px;
+    background:linear-gradient(145deg,rgba(70,46,32,.62),rgba(32,21,15,.58));border:1px solid var(--edge);
+    box-shadow:inset 0 1px 0 rgba(255,244,226,.14),0 24px 60px -24px rgba(0,0,0,.7);
+    -webkit-backdrop-filter:blur(28px) saturate(160%);backdrop-filter:blur(28px) saturate(160%)}
+  .arch{width:min(200px,56vw);aspect-ratio:4/5;display:grid;place-items:center;border-radius:50% 50% 24px 24px/40% 40% 24px 24px;
+    background:linear-gradient(145deg,rgba(255,244,226,.18),rgba(255,244,226,.05));border:1px solid rgba(255,240,214,.3);color:var(--brass)}
+  svg{width:72px;height:72px;margin-top:22%;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+  h1{font:400 clamp(1.7rem,6vw,2.3rem)/1.15 Georgia,"Iowan Old Style",serif}
+  p{color:var(--ink-2);max-width:44ch}
+  .actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:6px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:14px;border:1px solid transparent;font:inherit;font-weight:700;color:inherit;text-decoration:none;cursor:pointer;background:none}
+  .btn.brass{background:linear-gradient(145deg,#ecd29a,#c39a58);color:var(--brass-ink)}
+  .btn.glass{background:rgba(255,244,226,.08);border-color:var(--edge)}
+  .btn:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+<main>
+  <div class="arch" aria-hidden="true">
+    <svg viewBox="0 0 24 24"><path d="M3 3l18 18M8.5 16.4a5 5 0 0 1 7 0M5 12.9a10 10 0 0 1 3.2-2M10.7 5.1A15 15 0 0 1 22 9M2 9a15 15 0 0 1 4-2.6"/><circle cx="12" cy="20" r=".6"/></svg>
+  </div>
+  <h1>You’re offline</h1>
+  <p>This page isn’t saved on your phone yet, so it can’t open without a connection. Reconnect and try again, or call us to place your order.</p>
+  <div class="actions">
+    <button class="btn brass" type="button" onclick="location.reload()">Try again</button>
+    <a class="btn glass" href="tel:+919832596691">Call the store</a>
+  </div>
+</main>
+</body>
+</html>

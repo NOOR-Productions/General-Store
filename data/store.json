@@ -1,0 +1,25 @@
+{
+  "_help": "Shop details used across the site. Confirm the phone numbers, delivery fee and payment options before going live.",
+  "name": "Bapi Store",
+  "tagline": "Premium provisions and local essentials",
+  "about": "Your neighbourhood store near Curzon Gate, Bardhaman. We stock daily essentials, snacks, beauty, stationery and gifts, with WhatsApp ordering and doorstep delivery.",
+  "phone": "+919832596691",
+  "whatsapp": "919832596691",
+  "email": "",
+  "address": {
+    "line1": "Near Curzon Gate (Bijoy Toron)",
+    "line2": "BC Road & GT Road Junction",
+    "city": "Bardhaman",
+    "state": "West Bengal",
+    "pin": "713101"
+  },
+  "mapsQuery": "Curzon Gate Bardhaman West Bengal",
+  "timezone": "Asia/Kolkata",
+  "hours": [
+    { "days": [1, 2, 3, 4, 5, 6], "open": "09:00", "close": "21:00" },
+    { "days": [0], "open": "10:00", "close": "18:00" }
+  ],
+  "delivery": { "enabled": true, "fee": 0, "freeAbove": 0, "minOrder": 0, "note": "" },
+  "pickup": { "enabled": true },
+  "payments": ["Cash on delivery", "UPI on delivery"]
+}
